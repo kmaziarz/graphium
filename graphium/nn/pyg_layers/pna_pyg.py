@@ -111,6 +111,7 @@ class PNAMessagePassingPyg(MessagePassing, BaseGraphStructure):
 
         """
 
+        del kwargs["out_dim_edges"]
         MessagePassing.__init__(self, node_dim=0)
         BaseGraphStructure.__init__(
             self,

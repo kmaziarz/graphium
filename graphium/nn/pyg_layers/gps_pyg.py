@@ -202,7 +202,6 @@ class GPSLayerPyg(BaseGraphModule):
         # Normalization layers
         self.norm_layer_local = self._parse_norm(normalization=self.normalization, dim=in_dim)
         self.norm_layer_attn = self._parse_norm(normalization=self.normalization, dim=in_dim)
-        self.norm_layer_ff = self._parse_norm(self.normalization)
 
         self.biased_attention_key = biased_attention_key
         # Initialize the MPNN and Attention layers

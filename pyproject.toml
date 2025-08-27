@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "graphium"
 description = "Graphium: Scaling molecular GNNs to infinity."
-dynamic = ["version"]
+version = "0.1.0"
 authors = [
     { name = "Dominique Beaini", email = "dominique@valencediscovery.com" },
 ]
@@ -74,9 +74,6 @@ Documentation = "https://graphium-docs.datamol.io/"
 
 [tool.setuptools]
 include-package-data = true
-
-[tool.setuptools_scm]
-fallback_version = "dev"
 
 [tool.setuptools.packages.find]
 where = ["."]

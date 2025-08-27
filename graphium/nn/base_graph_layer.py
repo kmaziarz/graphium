@@ -99,7 +99,6 @@ class BaseGraphStructure:
         self.activation_layer = get_activation(self.activation)
         self.dropout_layer = self._parse_dropout(self.dropout)
 
-        self.norm_layer = self._parse_norm(self.normalization)
         self.droppath_layer = self._parse_droppath(self.droppath_rate)
 
     def _parse_dropout(self, dropout):
